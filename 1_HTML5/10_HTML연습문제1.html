@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10_HTML연습문제1</title>
+</head>
+
+<body>
+
+  <p>
+    고객명 : <input type="text">
+  </p>
+  <p>
+    전화번호 : <input type="text">
+  </p>
+  <p>
+    E-mail : <input type="text">
+  </p>
+
+  <p>
+  <form>
+    피자선택 : <select name="option">
+      <option value>피자를 선택하세요.</option>
+      <option>치즈피자</option>
+      <option>페페로니피자</option>
+      <option>고구마피자</option>
+      <option>포테이토피자</option>
+      <option>옥수수피자</option>
+    </select>
+    <fieldset>
+      <legend>피자사이즈</legend>
+      <input type="radio" name="size">Small</input><br><br>
+      <input type="radio" name="size">Medium</input><br><br>
+      <input type="radio" name="size">Large</input><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>토핑 선택</legend>
+      <input type="checkbox" name="topping">베이컨</input><br><br>
+      <input type="checkbox" name="topping">치즈</input><br><br>
+      <input type="checkbox" name="topping">양파</input><br><br>
+      <input type="checkbox" name="topping">버섯</input><br><br>
+    </fieldset>
+  </form>
+  </p>
+
+  <p>
+    희망배송시간 : <input type="time">
+  </p>
+
+  <p>
+    배송 시 요청사항 : <textarea rows="3"></textarea>
+  </p>
+
+  <button>주문하기</button>
+
+
+  </body>
+
+</html>
