@@ -1,0 +1,42 @@
+.home {
+  display: inline;
+}
+
+#nt {
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: black;
+}
+
+#ct {
+  color: white;
+  font-size: 13px;
+  background-color: black;
+}
+
+.p{
+  margin: 0;
+  padding: 0;
+}
+
+.box p {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 2px;
+}
+
+.box img {
+  height: 120px;
+  /* box-sizing: border-box;  */
+  margin: 0 2px;
+}
+
+.box{
+  display: inline-block;
+}
+
+body{
+  background-color: black;
+}

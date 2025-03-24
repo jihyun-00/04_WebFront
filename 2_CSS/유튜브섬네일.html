@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .video-section {
+            width: 70%;
+        }
+        .sidebar {
+            width: 30%;
+            padding-left: 20px;
+        }
+        .video-player {
+            width: 100%;
+            height: 400px;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .channel-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .channel-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .recommended-video {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .recommended-video img {
+            width: 120px;
+            height: 70px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-section">
+            <div class="video-player">Video Player</div>
+            <div class="video-title">아무 생각 없이 듣다 보면 감성에 빠지는 🎧✨ Chill 감성힙합 R&B 플리</div>
+            <div class="channel-info">
+                <img src="channel-profile.jpg" alt="channel">
+                <div>
+                    <div>found</div>
+                    <div>구독자 6.5천명</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="recommended-video">
+                <img src="thumb1.jpg" alt="Thumbnail">
+                <div>
+                    <div>[Playlist] Y2K 감성 월드 감성 플레이리스트</div>
+                    <div>조회수 7천회</div>
+                </div>
+            </div>
+            <div class="recommended-video">
+                <img src="thumb2.jpg" alt="Thumbnail">
+                <div>
+                    <div>낮잠 자는 길, 봄 드라이브 감성</div>
+                    <div>조회수 2천회</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

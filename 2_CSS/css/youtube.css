@@ -1,0 +1,57 @@
+
+
+ .container {
+  display: flex; /* Flexbox로 레이아웃 설정 */
+  height: 100vh; /* 화면의 전체 높이를 사용 */
+}
+
+.left, .right, .bottom {
+  flex: 1; /* 각 영역이 동일한 비율로 공간을 차지하게 설정 */
+}
+
+.left img{
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.left{
+  margin: 0 15px;
+}
+
+.right img {
+  width: 180px;
+  height: auto;
+  display: inline;
+  border-radius: 15px;
+}
+
+.right{
+  display: inline-block;
+}
+
+.p{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: bisque;
+}
+
+.box {
+  width: 200px;          /* 콘텐츠 영역의 너비 */    /* 콘텐츠 영역의 높이 */
+  padding: 0px;         /* 패딩 */
+  margin: 0px 0px;          /* 마진 */
+  /* background-color: lightblue; */
+}
+
+.box p{
+  /* line-height: 0.5; */
+  margin: 0px;
+}
+
+
+.bottom box{
+  display: inline;
+}
