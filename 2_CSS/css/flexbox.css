@@ -342,6 +342,7 @@ div{
    .body-item3-right {
     flex-basis: 70%;
     display: flex;
+    flex-direction: column;
    }
 
    .body-it-01 {
@@ -436,55 +437,69 @@ div{
       display: flex; /* 부모 전용 */
      }
 
-     .body-5 .sky {
+     .one {
       flex-basis: 30%;
       background-color: skyblue;
+      display: flex;
+      flex-direction: column;
      }
-     .body-5 .sky > div{
+
+     .one > div{
       flex-basis: calc(100%/3);
      }
 
-     .body-5 .pink {
+     .two {
       flex-basis: 15%;
       background-color: pink;
-      
      }
 
-     .body-5 .orange {
+     .three {
       flex-basis: 40%;
       background-color: orange;
       display: flex;
       flex-direction: column;
      }
 
-     .small {
+     .top {
       flex: 50%;
      }
 
-     .green {
+     .bottom {
       flex-basis: 50%;
-      background-color: red;
+      background-color: green;
       display: flex;
+      flex-direction: row;
      }
 
-     .small2 {
+     .left{
       flex-basis: 50%;
       background-color: green;
       display: flex;
       flex-direction: column;
      }
 
-     .green > div {
+     .right{
+      flex-basis: 50%;
+      background-color: red;
+     }
+
+     .left > div {
       flex-basis: 50%;
      }
 
-
-
-
-     
-     .body-5 .pink3 {
+     .four {
       flex-basis: 15%;
       background-color: pink;
+      display: flex;
+      flex-direction: column;
+     }
+
+     .pink1 {
+      flex-basis: 20%;
+     }
+
+     .pink2 {
+      flex-basis: 60%;
      }
 
 
