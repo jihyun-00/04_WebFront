@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+
+body {
+  margin: 20px;
+}
+
+main {
+  width: 1800px;
+  /* margin: auto; */
+}
+
+.content {
+  display: flex;
+}
+
+.content-1 {
+  flex-basis: 13%;
+}
+
+.content-2 {
+  flex-basis: 87%;
+
+  display: flex;
+}
+
+.left-icon{
+  font-size: 15px;
+  height: 40px;
+  
+}
+
+
+.search-area {
+  width: 500px;
+
+}
+
+.search-area fieldset {
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding: 2px;
+
+  display: flex;
+}
+
+#query {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  /* outline : input 태그에 포커싱되었을 때
+  이를 표현하기 위한 바깥선 
+  */
+  flex-basis: 92%;
+}
+
+#search-btn {
+  flex-basis: 8%;
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  border: none;
+  background-color: transparent;
+  /* transparent : 배경색 투명 */
+}
