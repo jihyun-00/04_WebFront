@@ -9,20 +9,69 @@ body {
 }
 
 main {
-  width: 1800px;
+  width: 2000px;
   /* margin: auto; */
 }
 
-header {
-  display: flex;
-  position: sticky;
-  top : 0;
-  background-color: white;
-}
 
-.google {
+header{
   display: flex;
-}
+  height: 64px;
+  position: sticky;
+  top:0;
+  background-color: white;
+ }
+
+
+ header section:nth-of-type(1),
+ header section:nth-of-type(3) {
+  
+  flex-basis: 20%;
+  display: flex;
+  
+  align-items: center;
+ }
+
+ .header-left > div{
+  padding-right: 10px;
+ }
+
+ header section:nth-of-type(2){
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .search-area div{
+  padding-right: 10px;
+ }
+
+ form {
+  display: flex;
+ }
+
+ #mic{
+  font-size: 20px;
+  background-color: rgb(231, 231, 231);
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+ }
+
+ .id > div {
+  padding-right: 10px;
+ }
+
+
+
 
 .content {
   display: flex;
@@ -46,7 +95,8 @@ header {
 .left-icon {
   font-size: 15px;
   height: 40px;
-  border-radius: 20%;
+  width: 200px;
+  border-radius: 8px;
 
   display: flex;
   align-items: center;
@@ -69,7 +119,7 @@ header {
 }
 
 .search-area {
-  width: 500px;
+  width: 1000px;
 
 }
 
@@ -79,18 +129,39 @@ header {
   padding: 2px;
 
   display: flex;
+  overflow: hidden;
 }
 
 #query {
   padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
   border: none;
   outline: none;
   /* outline : input 태그에 포커싱되었을 때
   이를 표현하기 위한 바깥선 
   */
   flex-basis: 92%;
+  width: 480px;
+}
+
+.jihyun {
+  font-size: 15px;
+  background-color: purple;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#bell {
+  color: black;
+  font-size: 25px;
 }
 
 #search-btn {
@@ -98,8 +169,16 @@ header {
   font-size: 20px;
   color: gray;
   border: none;
-  background-color: transparent;
+  overflow: none;
   /* transparent : 배경색 투명 */
+}
+
+#keyboard {
+  border: 0;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
 }
 
 #logo-side {
@@ -114,49 +193,47 @@ header {
 nav {
   height: 50px;
   margin-bottom: 20px;
-
-  position: sticky;
   /* sticky : 특정 스크롤 위치에 도달했을 때
     요소가 고정되는 효과를 주는데 사용함.
     top, bottom, left, right 속성이 필수로 같이 작성되어야 함
     -> 임계점 도달 시 어느 위치에 부착할지 정해야 하기 때문
   */
-  top: 0;
   background-color: white;
   display: flex;
+
 }
 
-nav li {
-  flex-basis: 150px;
+.all {
+  position: sticky;
+  top: 63px;
 }
 
-nav>div {
-  width: fit-content;
+nav button {
+  border: 0;
+  background-color: white;
   padding: 8px;
 }
-
 nav a {
   text-decoration: none;
-  font-weight: bold;
   color: black;
   background-color: rgb(236, 235, 235);
   height: 100%;
-  padding: 10px;
+  padding: 8px;
 
   display: block;
   text-align: center;
   line-height: 50px;
 
-  border-radius: 5px;
+  /* border-radius: 5px; */
 
   font-size: 14px;
-  border-radius: 20%;
+  border-radius: 10px;
 
   display: flex;
   align-items: center;
 }
 
-nav a:active {
+nav a:focus {
   background-color: black;
   color: white;
 }
@@ -171,11 +248,12 @@ nav a:active {
 .video>div {
   /* flex: 1; */
   margin: 0 7px;
-  width: 350px;
+  width: 382px;
+  height: 370px;
 }
 
 .video img {
-  width: 350px;
+  width: 382px;
   height: auto;
   border-radius: 15px;
 }
@@ -186,7 +264,7 @@ nav a:active {
 
 .video>div p {
   text-align: justify;
-  line-height: 30px;
+  /* line-height: 25px; */
 }
 
 .video-small {
@@ -209,8 +287,14 @@ nav a:active {
   display: flex;
 }
 
+.video-image > img {
+  width: 50px;
+  padding: 6px;
+}
+
 .video-title {
-  flex-basis: 80%;
+  flex-basis: 90%;
+  padding-left: 16px;
 }
 
 .video-dot {
@@ -222,18 +306,26 @@ nav a:active {
   padding: 7px;
 }
 
-.video-image {
+.video-image{
   width: 10px;
   flex-basis: 10%;
 }
 
 .one {
-  font-size: 14px;
+  font-size: 16px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 3줄까지 표시 */
+  -webkit-box-orient: vertical; /* 텍스트 수직 방향 정렬 */
+  overflow: hidden;
+
+  line-height: 24px;
 }
 
 .two {
-  font-size: 12px;
+  font-size: 14px;
   color: gray;
+  line-height: 20px;
 }
 
 hr {
@@ -251,11 +343,11 @@ hr {
 .live-stream>div {
   /* flex: 1; */
   margin: 0 7px;
-  width: 350px;
+  width: 382px;
 }
 
 .live-stream img {
-  width: 350px;
+  width: 382px;
   height: auto;
   border-radius: 15px;
 }
@@ -267,20 +359,6 @@ hr {
 .live-stream>div p {
   text-align: justify;
   line-height: 30px;
-}
-
-.video-small {
-  display: block;
-}
-
-.video-small * {
-  margin: 0;
-  padding: 0;
-}
-
-.video-small>div {
-  margin: 0px;
-
 }
 
 .video-under {
@@ -303,4 +381,103 @@ hr {
 .video-image {
   width: 10px;
   flex-basis: 10%;
+}
+
+.shorts-name {
+  display: flex;
+}
+
+.shorts-name > div:nth-of-type(2){
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.Shorts {
+  display: flex;
+  flex-wrap: wrap; /* 넘칠 경우 줄 바꿈 */
+  /* gap: 10px; */
+  /* border: 2px solid black; */
+}
+
+.Shorts>div {
+  /* flex: 1; */
+  margin: 0 3px;
+  height: 440px;
+}
+
+.Shorts img {
+  width: auto;
+  height: 440px;
+  border-radius: 15px;
+}
+
+
+.Shorts .one {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 3줄까지 표시 */
+  -webkit-box-orient: vertical; /* 텍스트 수직 방향 정렬 */
+  overflow: hidden;
+}
+
+.Shorts .two {
+  font-size: 14px;
+}
+
+.Shorts .video-small > div {
+  width: 255.72px;
+}
+
+.Shorts .video-under {
+  display: flex;
+}
+
+.Shorts .video-title {
+  flex-basis: 90%;
+}
+
+.Shorts .video-dot {
+  flex-basis: 10%;
+}
+
+.shorts-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* 모바일 : 767px 이하일 때 */
+@media all and (max-width: 767px){
+  main {
+    width: 100vw;
+    /* vw : viewport with의 약자 
+      현재 뷰포트의 100%만큼 너비 차지 */
+    }
+    header {
+      flex-direction: column;
+      flex-basis: 10%;
+    }
+
+
+    
+    nav {
+      display: none;
+    }
+
+    .content-1{
+      display: none;
+    }
+
+    .content-2 {
+      flex-direction: column;
+    }
 }

@@ -11,571 +11,751 @@
 </head>
 
 <body>
-  
+
   <main>
     <header>
-      <section>
-      <div>
-      <div id="side-and-logo">
-      <div style="width: 20px;">
-      <i id="logo-side" class="fa-solid fa-bars" style="color: black;"></i>
-      </div>
-      <a href="#">
-        <img src="../images/유튜브로고.PNG" id="home-logo" width="130px">
-      </a>
-      </div>
-    </div>
-    </section>
+
+
+      <section class="header-left">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div>
+          <a href="#"><img src="/images/유튜브로고.PNG" style="width: 130px;"></a>
+        </div>
+      </section>
 
 
 
-      <section>
-        <section class="search-area">
-          <!-- form 내부 input 태그값을 서버 또는 페이지로 제출/전달 -->
-          <form action="#" name="search-form">
-            <!-- filedset : form 태그 내부에서 input을 종류별로 묶는 용도로 자주 사용 -->
+      <section class="search-area">
+        <form action="#" name="search-form" class="f">
+
+          <div>
             <fieldset>
-              <input type="search" id="query" name="query"
-              autocomplete="off" placeholder="검색"
-              >
+              <input type="search" placeholder="검색 " id="query" name="query">
+              <button href="#" id="keyboard" class="search-btn"><i class="fa-solid fa-keyboard"></i></button>
               <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+
             </fieldset>
-          </form>
-        </section>
+          </div>
+
+
+          <div class="mic-box"><i id="mic" class="fa-solid fa-microphone"></i></div>
+        </form>
       </section>
-    
-      <!-- 계정 확인 부분 -->
-      <section class="google">
-        <div>
-          <i class="fa-solid fa-plus"></i>
-          만들기
+
+
+      <section class="id">
+        <div class="make">
+          <div><i class="fa-solid fa-plus"></i></div>
+          <div>만들기</div>
         </div>
-    
-        <div>
-          <i class="fa-regular fa-bell"></i>
-        </div>
-    
-        <div>지현</div> <!-- 올렷을 때 커서 모양 바꾸기 -->
+        <div><a href="#"><i id="bell" class="fa-regular fa-bell"></i></a></div>
+        <div class="jihyun">지현</div>
       </section>
-    
+
+
+
+
     </header>
 
     <section class="content">
       <!-- 메인 콘텐트 작성 영역 -->
       <section class="content-1">
 
-    <!-- 왼쪽 버튼 화면 -->
-    <section class="left">
-        <div class="left-icon">
-          <i class="fa-solid fa-house"></i>
-          &nbsp;&nbsp;&nbsp;홈
-        </div>
-      </a>
+        <!-- 왼쪽 버튼 화면 -->
+        <section class="left">
 
-      <div class="left-icon">
-        <i class="fa-solid fa-file-video"></i>
-        &nbsp;&nbsp;&nbsp;Shorts
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-house"></i>
+            &nbsp;&nbsp;&nbsp;홈
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-film"></i>
-        &nbsp;&nbsp;&nbsp;구독
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-file-video"></i>
+            &nbsp;&nbsp;&nbsp;Shorts
+          </div>
 
-      <hr>
+          <div class="left-icon">
+            <i class="fa-solid fa-film"></i>
+            &nbsp;&nbsp;&nbsp;구독
+          </div>
 
-      <div id="side-top">
-        내 페이지&nbsp;&nbsp;
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
+          <hr>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-clock"></i>
-        &nbsp;&nbsp;&nbsp;시청 기록
-      </div>
+          <div id="side-top">
+            내 페이지&nbsp;&nbsp;
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-circle-play"></i>
-        &nbsp;&nbsp;&nbsp;재생목록
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-clock"></i>
+            &nbsp;&nbsp;&nbsp;시청 기록
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-stopwatch"></i>
-        &nbsp;&nbsp;&nbsp;나중에 볼 동영상
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-circle-play"></i>
+            &nbsp;&nbsp;&nbsp;재생목록
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-regular fa-thumbs-up"></i>
-        &nbsp;&nbsp;&nbsp;좋아요 표시한 동영상
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-stopwatch"></i>
+            &nbsp;&nbsp;&nbsp;나중에 볼 동영상
+          </div>
 
-      <hr>
+          <div class="left-icon">
+            <i class="fa-regular fa-thumbs-up"></i>
+            &nbsp;&nbsp;&nbsp;좋아요 표시한 동영상
+          </div>
 
-      <div id="side-top">
-        탐색
-      </div>
+          <hr>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-fire"></i>
-        &nbsp;&nbsp;&nbsp;인기 급상승
-      </div>
+          <div id="side-top">
+            탐색
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-bag-shopping"></i>
-        &nbsp;&nbsp;&nbsp;쇼핑
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;&nbsp;&nbsp;인기 급상승
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-music"></i>
-        &nbsp;&nbsp;&nbsp;음악
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            &nbsp;&nbsp;&nbsp;쇼핑
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-ticket"></i>
-        &nbsp;&nbsp;&nbsp;영화
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-music"></i>
+            &nbsp;&nbsp;&nbsp;음악
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-headset"></i>
-        &nbsp;&nbsp;&nbsp;실시간
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-ticket"></i>
+            &nbsp;&nbsp;&nbsp;영화
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-gamepad"></i>
-        &nbsp;&nbsp;&nbsp;게임
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-headset"></i>
+            &nbsp;&nbsp;&nbsp;실시간
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-trophy"></i>
-        &nbsp;&nbsp;&nbsp;스포츠
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-gamepad"></i>
+            &nbsp;&nbsp;&nbsp;게임
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-graduation-cap"></i>
-        &nbsp;&nbsp;&nbsp;학습 프로그램
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-trophy"></i>
+            &nbsp;&nbsp;&nbsp;스포츠
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-life-ring"></i>
-        &nbsp;&nbsp;&nbsp;팟캐스트
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+            &nbsp;&nbsp;&nbsp;학습 프로그램
+          </div>
 
-      <hr>
+          <div class="left-icon">
+            <i class="fa-solid fa-life-ring"></i>
+            &nbsp;&nbsp;&nbsp;팟캐스트
+          </div>
 
-      <div id="side-top">
-        Youtube 더보기
-      </div>
+          <hr>
 
-      <div class="left-icon">
-        <i class="fa-brands fa-youtube" style="color: red;"></i>
-        &nbsp;&nbsp;&nbsp;Youtube Premium
-      </div>
+          <div id="side-top">
+            Youtube 더보기
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-brands fa-square-youtube" style="color: red;"></i>
-        &nbsp;&nbsp;&nbsp;Youtube Music
-      </div>
+          <div class="left-icon">
+            <i class="fa-brands fa-youtube" style="color: red;"></i>
+            &nbsp;&nbsp;&nbsp;Youtube Premium
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-brands fa-youtube" style="color: red;"></i>
-        &nbsp;&nbsp;&nbsp;Youtube Kids
-      </div>
+          <div class="left-icon">
+            <i class="fa-brands fa-square-youtube" style="color: red;"></i>
+            &nbsp;&nbsp;&nbsp;Youtube Music
+          </div>
 
-      <hr>
+          <div class="left-icon">
+            <i class="fa-brands fa-youtube" style="color: red;"></i>
+            &nbsp;&nbsp;&nbsp;Youtube Kids
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-gear"></i>
-        &nbsp;&nbsp;&nbsp;설정
-      </div>
+          <hr>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-flag"></i>
-        &nbsp;&nbsp;&nbsp;신고 기록
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-gear"></i>
+            &nbsp;&nbsp;&nbsp;설정
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-question"></i>
-        &nbsp;&nbsp;&nbsp;고객센터
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-flag"></i>
+            &nbsp;&nbsp;&nbsp;신고 기록
+          </div>
 
-      <div class="left-icon">
-        <i class="fa-solid fa-exclamation"></i>
-        &nbsp;&nbsp;&nbsp;의견 보내기
-      </div>
+          <div class="left-icon">
+            <i class="fa-solid fa-question"></i>
+            &nbsp;&nbsp;&nbsp;고객센터
+          </div>
 
-      <hr>
+          <div class="left-icon">
+            <i class="fa-solid fa-exclamation"></i>
+            &nbsp;&nbsp;&nbsp;의견 보내기
+          </div>
 
-      <p>
-        정보보도자료저작권문의하기크리에이터광고개발자
-        약관개인정보처리방침정책 및 안전YouTube 작동의 원리새로운 기능 테스트하기
-        © 2025 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway, Mountain View CA 94043, USA, 0807-882-594 (무료),
-        yt-support-solutions-kr@google.com, 호스팅: Google LLC, 사업자정보, 불법촬영물 신고
-        크리에이터들이 유튜브 상에 게시, 태그 또는 추천한 상품들은 판매자들의 약관에 따라 판매됩니다. 유튜브는 이러한 제품들을 판매하지 않으며, 그에 대한 책임을 지지 않습니다.
-      </p>
+          <hr>
 
-        
-        
+
+          <footer>
+
+            <p style="font-size: 13px; color: gray; cursor: pointer;">
+              정보&nbsp;보도자료&nbsp;저작권<br>
+              문의하기&nbsp;크리에이터&nbsp;광고<br>
+              개발자<br><br>
+              약관&nbsp;개인정보처리방침<br>정책 및 안전<br>YouTube 작동의 원리<br>새로운 기능 테스트하기<br><br>
+            </p>
+            <p style="font-size: 13px; color: gray;">&copy; 2025 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway,
+              Mountain View CA 94043, USA, 0807-882-594 (무료),
+              yt-support-solutions-kr@google.com, 호스팅: Google LLC, </p>
+
+            <p  style="font-size: 13px; color: rgb(0, 0, 197); cursor: pointer;">
+              사업자정보, 불법촬영물 신고<br>
+            </p>
+
+            <p style="font-size: 13px; color: gray;">
+              크리에이터들이 유튜브 상에 게시, 태그 또는 추천한 상품들은 판매자들의 약관에 따라 판매됩니다. 유튜브는 이러한 제품들을 판매하지 않으며, 그에 대한 책임을 지지 않습니다.
+            </p>
+          </footer>
+
+
+
+
+
 
         </section>
-        </section>
+      </section>
 
-        <section class="content-2">
-    
+      <section class="content-2">
+
         <!-- 오른쪽 동영상 화면-->
         <section>
 
-          <section>
-    
+          <section class="all">
             <nav>
-                <div><a href="#">전체</a></div>
-                <div><a href="#">음악</a></div>
-                <div><a href="#">게임</a></div>
-                <div><a href="#">라이브</a></div>
-                <div><a href="#">스케치 코미디</a></div>
-                <div><a href="#">액션 어드벤처 게임</a></div>
-                <div><a href="#">만화 영화</a></div>
-                <div><a href="#">뷰티 팁</a></div>
-                <div><a href="#">최근에 업로드된 동영상</a></div>
-                <div><a href="#">새로운 맞춤 동영상</a></div>
+              <button ><a href="#">전체</a></button>
+              <button><a href="#">음악</a></button>
+              <button><a href="#">게임</a></button>
+              <button><a href="#">라이브</a></button>
+              <button><a href="#">스케치 코미디</a></button>
+              <button><a href="#">액션 어드벤처 게임</a></button>
+              <button><a href="#">만화 영화</a></button>
+              <button><a href="#">뷰티 팁</a></button>
+              <button><a href="#">최근에 업로드된 동영상</a></button>
+              <button><a href="#">새로운 맞춤 동영상</a></button>
             </nav>
 
-            </section>
 
-            <section class="video">
-    
+          </section>
+
+          <section class="video">
+
+            <!-- <div>
+          <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px"><br>
+          <p>전액 국비 지원 AI 소프트웨어<p>
+            <p>믿을 수 있는 교육기관 멀티캠퍼스, 비전공자도 완주한 체계적 커리큘럼과 맞춤형 학습 관리</p>
+            <p>스폰서 | 멀티캠퍼스</p>
+          </div> -->
+
+            <div class="video-small">
+              <div>
+                <img src="/images/유튜브 플레이리스트 썸네일.jpg">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일1로고.jpg" style="border-radius: 50%;">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
+                  <p class="two">found<br>조회수 11만회 | 3주 전</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/썸네일2.jpg">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일2로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">토끼여우 '경찰 콤비' 떴다..🔥 역대급 애니 《주토피아 2》 예고편 유출 완전분석 총정리!!</p>
+                  <p class="two">매드무비 : MadMovie<br>조회수 91만회 | 7개월 전</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/썸네일3.jpg">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일3로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 | 가볍게 달려볼까? 🚗🎶 운전할 때 듣기 좋은 플레이리스트</p>
+                  <p class="two">라이크둠칫 likedoomchit<br>조회수 6.1만회 | 2주 전</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/썸네일4.jpg">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/띱 로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">일하기 싫다</p>
+                  <p class="two">띱 Deep<br>조회수 165만회 | 4일 전</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="shorts-text">
+            <i id="shorts-logo" class="fa-solid fa-file-video" style="color: red; font-size: 20px;"></i>
+            &nbsp; Shorts<br><br>
+          </div>
+
+
+
+          <section class="Shorts">
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">작년 뉴진스 기자회견 때 욕 엄청 먹었던 기자의 팩폭 질문
+                  </p>
+                  <p class="two">조회수 92만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠2.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">관식이 전용 호루라기 #폭싹속았수다
+                  </p>
+                  <p class="two">조회수 81만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠3.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">카더가든 유튭에 올라온 귀염둥이 아기 계속보기
+                  </p>
+                  <p class="two">조회수 320만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠4.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">테슬라 핸들, 자동주차 리뷰하는 박명수
+                  </p>
+                  <p class="two">조회수 3.6만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠5.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">6년차 대기업 직장인이 매일 쓰는 사무실 필수템 🖥️ 데스크테리어 아이템 추천
+                  </p>
+                  <p class="two">조회수 58만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="video-small">
+              <div>
+                <img src="/images/쇼츠6.PNG">
+              </div>
+              <!-- 동영상 아래 제목 -->
+
+
+              <div class="video-under">
+
+                <div class="video-title">
+                  <p class="one">코코 속 숨겨진 디테일 2가지 ㄷㄷ.. #shorts
+                  </p>
+                  <p class="two">조회수 90만회</p>
+                </div>
+
+                <div class="video-dot">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </section>
+
+          <br><br><br><br><br><br>
+
+          <section class="video">
+
             <!-- <div>
                 <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px"><br>
                 <p>전액 국비 지원 AI 소프트웨어<p>
-                <p>믿을 수 있는 교육기관 멀티캠퍼스, 비전공자도 완주한 체계적 커리큘럼과 맞춤형 학습 관리</p>
-                <p>스폰서 | 멀티캠퍼스</p>
-            </div> -->
-    
+                  <p>믿을 수 있는 교육기관 멀티캠퍼스, 비전공자도 완주한 체계적 커리큘럼과 맞춤형 학습 관리</p>
+                  <p>스폰서 | 멀티캠퍼스</p>
+                </div> -->
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/유튜브 플레이리스트 썸네일.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일1로고.jpg" style="border-radius: 50%;">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
+                  <p class="two">found<br>조회수 11만회 | 3주 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일2.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일2로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">토끼여우 '경찰 콤비' 떴다..🔥 역대급 애니 《주토피아 2》 예고편 유출 완전분석 총정리!!</p>
+                  <p class="two">매드무비 : MadMovie<br>조회수 91만회 | 7개월 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일3.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일3로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 | 가볍게 달려볼까? 🚗🎶 운전할 때 듣기 좋은 플레이리스트</p>
+                  <p class="two">라이크둠칫 likedoomchit<br>조회수 6.1만회 | 2주 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일4.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/띱 로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">일하기 싫다</p>
+                  <p class="two">띱 Deep<br>조회수 165만회 | 4일 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일5.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일5로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">“아무도 이렇게 안 지어요” 설계만 2년, 도면만 100번. 친환경 주택 100채 지은 건축가 딸이 지은 기후위기 친환경 주택｜건축탐구 집｜#골라듄다큐
+                  </p>
+                  <p class="two">EBSDocumentary (EBS 다큐)
+                    <br>조회수 24만회 | 7일 전
+                  </p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일6.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/띱 로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">2박 3일 일본 여행</p>
+                  <p class="two">띱 Deep
+                    <br>조회수 214만회 | 13일 전
+                  </p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일7.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/넷플릭스로고.PNG">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">[1막 비하인드] 촬영 현장에서도 폭싹 웃고 울었수다🌼 애순&관식 애틋 모먼트들과 도동리 식구들의 1막 비하인드🍊 | 폭싹 속았수다 | 넷플릭스</p>
+                  <p class="two">Netflix Korea 넷플릭스 코리아<br>조회수 113만회 | 2주 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
-    
+
             <div class="video-small">
-            <div>
-                <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-            </div>
-            <!-- 동영상 아래 제목 -->
-
-
-            <div class="video-under">
-              <div class="video-image">
-              <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-              프로필
+              <div>
+                <img src="/images/썸네일8.jpg">
               </div>
+              <!-- 동영상 아래 제목 -->
 
-              <div class="video-title">
-                <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                <p class="two">found<br>조회수 11만회 | 3주 전</p>
-              </div>
 
-              <div class="video-dot">
+              <div class="video-under">
+                <div class="video-image">
+                  <img src="/images/썸네일8로고.jpg">
+                </div>
+
+                <div class="video-title">
+                  <p class="one">[Playlist] 가만히 틀어놓기 좋은 잔잔한 띵곡 모음 | 국내 인디노래모음 플레이리스트</p>
+                  <p class="two">핑프<br>조회수 146만회 | 2년 전</p>
+                </div>
+
+                <div class="video-dot">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
               </div>
-              
-            </div>
 
             </div>
 
-            </section>
-
-            <h3>맞춤 실시간 스트림</h3>
-
-            <section class="live-stream">
+          </section>
 
 
-              <div class="video-small">
-                <div>
-                    <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-                </div>
-                <!-- 동영상 아래 제목 -->
-    
-    
-                <div class="video-under">
-                  <div class="video-image">
-                  <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-                  프로필
-                  </div>
-    
-                  <div class="video-title">
-                    <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                    <p class="two">found<br>조회수 11만회 | 3주 전</p>
-                  </div>
-    
-                  <div class="video-dot">
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </div>
-                  
-                </div>
-    
-                </div>
-
-              <div class="video-small">
-                <div>
-                    <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-                </div>
-                <!-- 동영상 아래 제목 -->
-    
-    
-                <div class="video-under">
-                  <div class="video-image">
-                  <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-                  프로필
-                  </div>
-    
-                  <div class="video-title">
-                    <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                    <p class="two">found<br>조회수 11만회 | 3주 전</p>
-                  </div>
-    
-                  <div class="video-dot">
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </div>
-                  
-                </div>
-    
-                </div>
-
-              <div class="video-small">
-                <div>
-                    <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-                </div>
-                <!-- 동영상 아래 제목 -->
-    
-    
-                <div class="video-under">
-                  <div class="video-image">
-                  <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-                  프로필
-                  </div>
-    
-                  <div class="video-title">
-                    <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                    <p class="two">found<br>조회수 11만회 | 3주 전</p>
-                  </div>
-    
-                  <div class="video-dot">
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </div>
-                  
-                </div>
-    
-                </div>
-
-              <div class="video-small">
-                <div>
-                    <img src="/images/유튜브 플레이리스트 썸네일.jpg" width="400px">
-                </div>
-                <!-- 동영상 아래 제목 -->
-    
-    
-                <div class="video-under">
-                  <div class="video-image">
-                  <!-- <img src="/images/유튜브 플레이리스트 썸네일.jpg"> -->
-                  프로필
-                  </div>
-    
-                  <div class="video-title">
-                    <p class="one">요즘 트렌디한 카페에서 들리는 감성 힙합 🎧☕ Chill 감성힙합 R&B 플리</p>
-                    <p class="two">found<br>조회수 11만회 | 3주 전</p>
-                  </div>
-    
-                  <div class="video-dot">
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </div>
-                  
-                </div>
-    
-                </div>
 
 
-            </section>
-    
-    
-    
         </section>
-    </section>
+      </section>
     </section>
 
 
