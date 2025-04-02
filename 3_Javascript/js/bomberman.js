@@ -1,46 +1,50 @@
-// bomberman.style.transform = 변경된 좌표;
+let xindex = 0; // x좌표 방향대로 얼마만큼 이동했는지 기억할 변수
+let yindex = 0; // y좌표 방향대로 얼마만큼 이동했는지 기억할 변수
 
-const man = document.querySelector("#bomberman");
-const rect = man.getBoundingClientRect();
-const box = document.querySelector("#box");
 
 document.addEventListener("keydown", function(e){
 
   const man = document.querySelector("#bomberman");
 
+  console.log(e.key);
+
   if(e.key == "ArrowRight"){
-    man.style.transform += `translateX(10px)`;
+    xindex += 10;
+  } else if(e.key == "ArrowLeft"){
+    xindex -=10;
+  } else if(e.key == "ArrowUp"){
+    yindex -=10;
+  } else if(e.key == "ArrowDown"){
+    yindex +=10;
+  } else if(e.key == "x"){
+
+    const box = document.querySelector("#box");
+    box.innerHTML += `<img src="../../images/bomb.png" 
+    class="bomb"
+    style="transform: translate(${xindex}px, ${yindex}px);
+    position: absolute">`;
+
+  } else if(e.key == "z"){
+
+    explodeBomb();
+
+  } else {
+    alert("방향키, z, x만 가능");
   }
 
-  if(e.key == "ArrowLeft"){
-    man.style.transform += `translateX(-10px)`;
-  }
+  man.style.transform = `translate(${xindex}px, ${yindex}px)`;
 
-  if(e.key == "ArrowUp"){
-    man.style.transform += `translateY(-10px)`;
-  }
-
-  if(e.key == "ArrowDown"){
-    man.style.transform += `translateY(10px)`;
-  }
-
-  if(e.key == "x"){
-
-    box.innerHTML += `<img src="../../images/bomb.png">`;
-  }
-
-  if(e.key == "z"){
-    const all = document.querySelectorAll("#box > img");
-    all.style.transform = `translateX(rect.left)`
-    
-    // 모든 이미지 src 변경
-      all.forEach((img) => {
-        img.src = "../../images/boomm.png";  // 변경할 이미지 경로
-    });
-
-
-  }
 });
 
+const explodeBomb = () => {
+  const bombs = document.querySelectorAll(".bomb");
+  // bombs 유사배열 형태
 
-// console.log(rect.left, "    ", rect.top);
+  // for .. of 문 : 배열같은 반복 가능한 객체의 요소를 순차적으로 순회하는 반복문
+  for(let bomb of bombs){
+    bomb.src = "../../images/boomm.png";
+
+  }
+
+}
+
