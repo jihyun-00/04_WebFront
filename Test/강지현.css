@@ -1,0 +1,26 @@
+.table2 > thead th, .table2 > tfoot th {
+  background-color: rgb(248, 162, 128);
+  color: white;
+}
+
+.table2 > tbody td {
+  background-color: rgb(250, 238, 206);
+}
+
+.table2 > tbody > tr > td:nth-child(2){
+  width: 440px;
+}
+
+.table2 > tbody > tr > td:nth-child(4),
+.table2 > tbody > tr > td:nth-child(5){
+  width: 130px;
+}
+
+.one {
+  width: 300px;
+}
+
+.two {
+  width: 300px;
+  height: 100px;
+}
