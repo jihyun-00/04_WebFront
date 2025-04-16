@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI구현포트폴리오</title>
+</head>
+<body>
+
+  <form>
+  <table style="height: 400px;">
+    <tr>
+      <th>너비 : </th>
+      <td><input type="text" id="wid" style="width: 100px;"> px</td>
+      <th>높이 : </th>
+      <td><input type="text" id="hei"style="width: 100px;"> px</td>
+    </tr>
+
+    <tr>
+      <th>글자크기 : </th>
+      <td><input type="text"style="width: 100px;"> px</td>
+      <th>굵기 : </th>
+      <td>보통<input type="radio">
+          굵게<input type="radio"></td>
+    </tr>
+
+    <tr>
+      <th>글자색 : </th>
+      <td><input type="text"></td>
+      <th>배경색 : </th>
+      <td><input type="text"></td>
+    </tr>
+
+    <tr>
+      <th>가로정렬 : </th>
+      <td colspan="5">왼쪽<input type="radio">
+      가운데<input type="radio">
+      오른쪽<input type="radio"></td>
+    </tr>
+
+    <tr>
+      <th>세로정렬 : </th>
+      <td colspan="5">위<input type="radio">
+      가운데<input type="radio">
+      아래<input type="radio"></td>
+    </tr>
+
+    <tr>
+      <th>출력 문자열 : </th>
+      <td colspan="5"><input type=text style="width: 500px;"></td>
+    </tr>
+
+    <tr>
+      <td colspan="6" style="text-align: center;"><button id="setBtn">적용하기</button></td>
+    </tr>
+  </table>
+
+  <div id="container" style="border: 1px solid black; display: none;">
+  </div>
+
+  </form>
+  
+</body>
+</html>
